@@ -1,0 +1,233 @@
+* {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* section1 */
+
+#sec-1 {
+    height: 700px;
+    background-image: url("https://zuri.team/img/hero-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sec1-content {
+    display: grid;
+    max-width: 700px;
+    margin-inline: auto;
+    text-align: center;
+    padding-top: 5%;
+    gap: 41%;
+}
+
+.btn-div {
+    display: flex;
+}
+
+.btns {
+    padding: 11px 28px;
+    border: 1px solid #E7332B;
+    max-width: 304px;
+}
+
+.btn-1 {
+    background-color: #E7332B;
+    color: #fff;
+    margin-right: 24px;
+    outline: none;
+}
+
+.btn-2 {
+    background-color: #fff;
+    color: #E7332B;
+}
+
+.btn-1:hover {
+    background-color: #fff;
+    color: #E7332B;
+}
+
+.btn-2:hover {
+    background-color: #E7332B;
+    color: #fff;
+}
+
+@media(max-width:800px) {
+    .sec1-content {
+        gap: 40px;
+        padding-top: 35%;
+    }
+    .btn-div {
+        display: grid;
+        gap: 35%;
+    }
+    .btn-1 {
+        margin-right: 0;
+    }
+    .sec1 {
+        height: 100vh;
+    }
+}
+
+
+/* section2 */
+
+.zuri-team {
+    text-align: center;
+    margin-top: 13%;
+    max-width: 390px;
+    margin-inline: auto;
+}
+
+.zuri-team h4 {
+    color: #E7332B;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.zuri-team h2 {
+    font-size: 24px;
+    line-height: 40px;
+    color: #514949;
+}
+
+.expertise {
+    width: 374px;
+    background-color: #FFFAFA;
+    display: grid;
+    gap: 16%;
+    padding: 61px 47px 132px 36px;
+}
+
+.expertise-img {
+    width: 122px;
+}
+
+.expertise p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #514949;
+    opacity: 0.9;
+}
+
+.expertise a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #E7332B;
+    opacity: 0.9;
+}
+
+.sec2-maindiv {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    position: relative;
+}
+
+.sec2-lastdiv {
+    display: flex;
+    justify-content: space-between;
+    transform: translate(0px, -515px);
+    position: absolute;
+    z-index: -1;
+}
+
+.sec2-lastdiv img {
+    width: 24%;
+}
+
+@media(max-width:1150px) {
+    .sec2-maindiv {
+        flex-direction: column;
+    }
+    .expertise {
+        margin: 20px auto;
+        width: 85%;
+    }
+    .zuri-team p {
+        padding-inline: 2%;
+    }
+    .sec2-lastdiv {
+        display: none;
+    }
+}
+
+
+/* footer */
+
+.footer {
+    padding-inline: 5%;
+    margin-inline: auto;
+    margin-top: 13% !important;
+}
+
+.grid {
+    display: grid;
+}
+
+.socials {
+    display: flex;
+    padding-inline: 21%;
+    margin-left: 17px;
+    margin-bottom: 20%;
+}
+
+.grid:nth-child(4)>p {
+    text-align: center;
+}
+
+.copywright {
+    margin-top: 7%;
+}
+
+.copywright hr {
+    width: 87%;
+    margin-left: 5%;
+}
+
+.grid p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #514949;
+}
+
+.grid h5 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #514949;
+    opacity: 0.9;
+}
+
+.g-2 {
+    line-height: 49px;
+}
+
+.a {
+    color: #E7332B;
+    text-decoration: none;
+}
+
+.a:hover {
+    color: #E7332B;
+    text-decoration: underline;
+}
+
+@media(max-width:991px) {
+    .footer {
+        text-align: center;
+    }
+    .copywright {
+        margin-top: 0;
+    }
+}
